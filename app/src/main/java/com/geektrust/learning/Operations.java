@@ -7,15 +7,9 @@ public class Operations {
     public void select(String input) {
         splitInput = input.split("\\s");
         option=splitInput[0];
-        switch (option){
-            case "BOOK":
-                operationsPerformer.bookRoom(splitInput);
-            break;
-
-            case "VACANCY":
-                operationsPerformer.roomVacancy(splitInput);
-            break;
-
+        switch (option) {
+            case "BOOK" -> operationsPerformer.bookRoom(splitInput);
+            case "VACANCY" -> operationsPerformer.roomVacancy(splitInput);
         }
     }
 }
